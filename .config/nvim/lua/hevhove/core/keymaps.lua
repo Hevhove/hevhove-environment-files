@@ -40,6 +40,7 @@ keymap.set("n", "<leader>qq", ":q<CR>")
 keymap.set("n", "<leader>ww", ":w<CR>")
 keymap.set("n", "<leader>wq", ":wq<CR>")
 keymap.set("n", "<leader>qa", ":qa!<CR>")
+
 ----------------------
 -- Plugin Keybinds
 ----------------------
@@ -48,7 +49,8 @@ keymap.set("n", "<leader>qa", ":qa!<CR>")
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>et", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>ef", ":NvimTreeFocus") -- move focus back to file explorer
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
