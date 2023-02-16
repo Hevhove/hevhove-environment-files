@@ -1,0 +1,13 @@
+# Insert your preferred key mappings here.
+unmap L
+unmap H
+unmap J
+unmap K
+unmap d
+unmap u
+map J scrollPageDown
+map K scrollPageUp
+map H previousTab
+map L nextTab
+map <Ctrl-o> goBack
+map <Ctrl-i> goForward
