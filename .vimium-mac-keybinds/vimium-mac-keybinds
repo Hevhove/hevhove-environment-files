@@ -9,5 +9,5 @@ map J scrollPageDown
 map K scrollPageUp
 map H previousTab
 map L nextTab
-map <Ctrl-o> goBack
-map <Ctrl-i> goForward
+map <c-o> goBack
+map <c-i> goForward
