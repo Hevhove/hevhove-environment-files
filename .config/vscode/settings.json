@@ -1,0 +1,234 @@
+        ":tabo"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "t",
+        "x"
+      ],
+      "commands": [
+        [
+          "<Leader>",
+          "g",
+          "p"
+        ],
+        "commands": [
+          "editor.action.peekDefinition",
+          "acceptSelectedSuggestion"
+        ],
+        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !editorReadonly"
+      },
+      "f",
+      "t"
+    ],
+    "commands": [
+      "workbench.action.createTerminalEditor"
+    ],
+    "when": "editorTextFocus && !terminalFocus && !quickInputVisible"
+  }
+],
+"git.openRepositoryInParentFolders": "never",
+"vim.useSystemClipboard": true,
+"explorer.confirmDelete": false,
+"C_Cpp.intelliSenseEngine": "disabled",
+"window.zoomLevel": 1,
+} // Backward / Forward Navigation
+		{
+"before": [
+  "<C-o>"
+],
+"commands": [
+  "workbench.action.navigateBack"
+],
+"when": "editorTextFocus && !editorReadonly"
+},
+{
+"before": [
+  "<C-i>"
+],
+"commands": [
+  "workbench.action.navigateForward"
+],
+"when": "editorTextFocus && !editorReadonly"
+},
+{
+"before": [
+  "<Leader>",
+  "g",
+  "t"
+],
+"commands": [
+  "workbench.action.terminal.toggleTerminal"
+],
+"when": "editorTextFocus && !terminalFocus && !quickInputVisible"
+},
+{
+"before": [
+  "<Leader>",
+  ":tabclose"
+]
+},
+{
+"before": [
+  "<Leader>",
+  "nh"
+],
+"commands": [
+  ":nohl"
+]
+},
+{
+"before": [
+  "<Leader>",
+  "w",
+  "w"
+],
+"commands": [
+  "workbench.action.files.save"
+]
+},
+{
+"before": [
+  "<Leader>",
+  "p"
+],
+"commands": [
+  "workbench.action.showCommands",
+]
+},
+// Move x out of default register
+{
+"before": [
+  "x"
+],
+"after": [
+  "\"",
+  "_",
+  "x"
+]
+},
+// Go to definition
+{
+"before": [
+  "<Leader>",
+  "g",
+  "d"
+],
+"commands": [
+  "editor.action.goToDeclaration"
+],
+"when": "editorTextFocus && !editorReadonly"
+},
+// Peek definition
+{
+"before": {
+  "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.useLocalIp": true,
+  "files.autoSave": "afterDelay",
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.inlineSuggest.enabled": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": false,
+  "git.confirmSync": false,
+  "editor.lineNumbers": "on",
+  // NOTE: Non-vim keybindings are in keybindings.json
+  // VIM KEYMAPS
+  "vim.leader": "<Space>",
+  // INSERT MODE KEYBINDS
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<ESC>"
+      ]
+    }
+  ],
+  // NORMAL MODE KEYBINDS
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "5",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "5",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "j"
+      ],
+      "after": [
+        "J"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "t",
+        "t"
+      ],
+      "commands": [
+        ":tabnew"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "commands": [
+        ":tabnext"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "commands": [
+        ":tabprev"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "t",
+        "n"
+      ],
+      "commands": [
+        ":tabnext"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "t",
+        "p"
+      ],
+      "commands": [
+        ":tabprev"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "t",
+        "o"
+      ],
+      "commands": [

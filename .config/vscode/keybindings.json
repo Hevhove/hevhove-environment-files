@@ -1,0 +1,32 @@
+[
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft",
+    "when": "editorTextFocus && !suggestWidgetVisible && !inDebugRepl || filesExplorerFocus || terminalFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown",
+    "when": "editorTextFocus && !suggestWidgetVisible && !inDebugRepl || filesExplorerFocus || terminalFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp",
+    "when": "editorTextFocus && !suggestWidgetVisible && !inDebugRepl || filesExplorerFocus || terminalFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight",
+    "when": "editorTextFocus && !suggestWidgetVisible && !inDebugRepl || filesExplorerFocus || terminalFocus"
+  },
+  {
+    "key": "A",
+    "command": "workbench.action.files.newUntitledFile",
+    "when": "explorerViewletFocus && filesExplorerFocus == true"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus && filesExplorerFocus == true"
+  }
+]
